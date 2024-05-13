@@ -47,7 +47,7 @@ stage('Deployment') {
 finally {
     
   
- (currentBuild.result != "ABORTED") && node("jenkins01") {
+ (currentBuild.result != "ABORTED") && node("master") {
          // Send e-mail notifications for failed or unstable builds.
      // currentBuild.result must be non-null for this step to work.
      step([$class: 'Mailer',
