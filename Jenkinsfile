@@ -10,7 +10,7 @@ import java.net.URL
 try {
     
 node{
-
+label 'master'
   stage('Checkout') {
     git 'https://github.com/edureka-git/DevOpsClassCodes'
     
